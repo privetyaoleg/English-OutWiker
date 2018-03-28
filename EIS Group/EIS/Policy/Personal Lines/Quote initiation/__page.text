@@ -1,0 +1,54 @@
+!!! Personal Lines Quote initiation
+
+To initiate a new business quote, proceed as follows:
+* on ''Customer tab'' click [''Add Quote''] button or select ''Quote tab'';
+
+* when the quote initiation page is displayed, the ''‘Product’'' drop-down list is empty and [''Add New Quote''] button is disabled until a product is selected.
+(:thumbgallery cols=1 px=850:)
+----
+!!!!! Общая формула для навигации по Quote, независимо от продукта, одинакова:
+
+* как только пользователь выбирает желаемый продукт, для которого генерирует Quote, он проходит через набор экранов, которые требуют определенного количества ввода данных;
+
+* некоторые поля могут быть предварительно заполнены или дефолтны на основе Product Factory Rules и конфигурации для выбранного продукта;
+
+* пройти по вкладкам можно, либо выбрав кнопку «Далее» в нижней части каждой страницы или путем выбора другой вкладки.
+----
+!!!!! Новый автомобиль можно добавить на вкладку Vehicle двумя способами:
+
+* Ввести действительный идентификационный номер транспортного средства в поле VIN и нажмите [VIN Lookup]. Обязательные поля будут предварительно заполнены в соответствии с введеным VIN. Затем нажмите кнопку [Vehicle Value Estimation][Оценка стоимости автомобиля], чтобы заполнить значения.
+
+* Выберите значение «VIN Not Applicable» в поле «No Vin Reason». Выберите любые значения в Model Year, Make fields. Выберите «Named Non-Owned» или «ДРУГИЕ» значения в полях Model и Body Style. Заполните все обязательные поля с любыми значениями. Затем нажмите кнопку [Оценка стоимости автомобиля], чтобы заполнить
+----
+
+''''System displays the following tabs for [!Home (Preconfigured)!] Quote''''
+
+(:spoiler:)
+* Policy
+* Insured
+* Risk Address
+* Claim Report
+* Mortgagees
+* Coverages & Premium
+* Scheduled Property
+* Forms
+* Documents
+* Bind
+* Inspection
+(:spoilerend:)
+----
+
+''''System displays the following tabs for [!Auto (Preconfigured) !]Quote''''
+(:spoiler:)
+* Policy
+* Insured
+* Driver
+* Vehicle
+* MVR/Claims
+* Forms/Addl Info
+* Assignment
+* Premium & Coverages
+* Documents
+* Bind
+(:spoilerend:)
+----

@@ -1,0 +1,15 @@
+* '''‘Associate Business Entity’''' ''checkbox'' -> new Business Entity Tab (only for Individual)
+* '''‘Add Business Entity’''' ''button'' -> new section for filling appears
+(:source lang="c":)
+I am Tom Brown, has business enterprise and its data will be entered at
+Business Entity tab
+(:sourceend:)
+* '''‘Tax Exempt’''' ''field''
+# checked - клиент освобождается от уплаты налогов
+# unchecked - будет платить и это будет показано в Premium Calculation
+----
+* '''‘Major/Large Account’''' ''section''
+Click ‘Associate Account’ -> select Existing of New Account -> Assign Manager
+Создается для обьединения некоторых клиентов под одной учетной записью, которая контролируется одним менеджером
+----
+

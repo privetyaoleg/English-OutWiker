@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:16pt;
+			font-family:Maiandra GD;
+		}
+
+		img{border:none}
+		body {
+background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(245,245,245,1)), color-stop(100%, rgba(225,218,236,1)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1daec', GradientType=1 );
+}
+	</style>
+	<!-- Begin Thumblist styles -->
+<style>
+    table.thumblist-table {
+        border: 1px solid #DDD;
+        }
+
+    div.thumblist-table-item{
+		padding: 1em;
+	}
+
+	td.thumblist-td {
+        border: 1px solid #DDD;
+		text-align: center;
+	}
+
+    div.thumblist-table-image{
+		text-align: center;
+	}
+
+	div.thumblist-table-comment{
+		text-align: center;
+		height: 100%;
+	}
+</style>
+<!-- End Thumblist styles -->
+</head>
+
+<body>
+<h3>Main Personal Line Quote Lifecycle</h3>
+<table class="thumblist-table">
+<tr class="thumblist-row">
+<td class="thumblist-td"><div class="thumblist-table-item"><div class="thumblist-table-image"><A HREF="__attach/statuses_quote.png"><IMG SRC="__attach/__thumb/th_maxsize_650_statuses_quote.png"/></A></div><div class="thumblist-table-comment"></div></div></td>
+</tr>
+</table><br/>
+<h4>Статусы доступные для Personal Lines Quote</h4>
+<ul>
+<li><b><i>Initiated</i></b> - Инициированный достигается после создания новой Quote, Endorsment или Renewal. Если новая Quote не сохраняется, транзакция остается в Initiated состояние и не ее нельзя увидеть из пользовательского интерфейса приложения.</li>
+</ul>
+<ul>
+<li><b><i>Data Gathering</i></b> - Сбор данных приобретается после запуска сбора данных и цитирования был сохранен. Quote остается в этом состоянии, пока она не будет успешно оценена.</li>
+</ul>
+<ul>
+<li><b><i>Suspended</i></b> - Приостановлено, когда Quote приостанавливается по некоторым причинам (например, Клиент должен предоставить некоторые детали, которые не известны в момент).</li>
+</ul>
+<ul>
+<li><b><i>Premium Calculated</i></b> - Премиум рассчитывается достигается при завершении сбора данных, все проверки пройдены, и премия успешно рассчитана.</li>
+</ul>
+<ul>
+<li><b><i>Proposed</i></b> - Предлагается приобрести, когда предложение создается для Quote. Предложение является необязательным действием. Когда создается предложение, это означает, что Quote предлагается Клиенту.</li>
+</ul>
+<ul>
+<li><b><i>Bound</i></b>  - приобретается при привязке Quote . Привязка - необязательное действие. Когда Quote is Bound, это означает, что Клиент согласился с предложенным условия и премии. Это в основном зеленый свет для выдачи Policy.</li>
+</ul>
+<ul>
+<li><b><i>Issued</i></b>  - Выдача приобретается при выдаче котировки. На этом этапе Квота переходит в Полис. Полис вступает в силу в ее effective date в силу.</li>
+</ul>
+<ul>
+<li><b><i>Expired</i></b>  - Истекает, когда котировка находится в том же состоянии в течение нескольких дней (определен в поиске QuoteExpiration lookup). Если квота имеет Истекший статус любых других действий, кроме Inquiry и Copy из квоты может не выполняться по котировке. Это делается с предположением что данные, приведенные в квоте, слишком стары, поэтому новая цитата должна быть начата.</li>
+</ul>
+<ul>
+<li><b><i>Company/Customer Declined</i></b> - Компания / Клиент отклоняется, приобретается, когда приобретается, когда квота отклоняется либо Компанией, либо Клиентом.</li>
+</ul>
+</body>
+</html>

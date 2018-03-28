@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h2>Состояние доступности для Personal Lines Policy</h2>
+<br/>
+Как только полис заишьился (Issued), полис сразу же принимает один из следующих статусов в зависимости от даты истечения срока действия и системной даты:<br/>
+<ul>
+<li><b><i>Pending</i></b>: Policy Effective Date > sysdate (ожидание)</li>
+<li><b><i>Active</i></b>: Policy Effective Date <= sysdate < Policy Expiration Date (активный)</li>
+<li><b><i>Expired</i></b>: Policy Expiration Date < sysdate (истекший)</li>
+</ul>
+<hr>
+<i>Policy Effective Date</i> - дата вступления в силу полиса<br/>
+<i>Policy Expiration Date</i> - дата истечения срока действия полиса
+<hr>
+<h3>После выдачи, полису могут быть назначены следующие состояния:</h3>
+<ul>
+<li><b><i>Cancellation Pending status</i></b> приобретается, когда по какой-либо причине (обычно без уплаты Премиум), полис отменяется с определенной даты. <br/>
+Date of Policy cancellation > System Date.</li>
+</ul>
+<ul>
+<li><b><i>Cancelled status </i></b>  приобретается, когда:</li>
+<ul>
+<li><i>System Date = Cancellation Date for a Policy</i>  которая ранее была в статусе «Отказ в ожидании»</li>
+<li><i>Cancellation Date <= System Date</i> полис отменяется немедленно</li>
+</ul>
+</ul>
+<ul>
+<li><b><i>Do Not Renew flag</i></b>  означает, что по определенным причинам либо Застрахованный, либо Компания не согласна с обновлением полиса (без ручного или автоматизированного обновление возможно).</li>
+</ul>
+<ul>
+<li><b><i>Manual Renew flag</i></b>  означает, что по определенным причинам либо Застрахованный, либо Компания не соглашается автоматически обновлять полис. Возможно только ручное обновление</li>
+</ul>
+<hr>
+<br/>
+</body>
+</html>

@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = проверка
+order = 0
+creationdatetime = 2018-03-20 20:01:35.947000
+datetime = 2018-03-20 20:27:27.233000
+cursorposition = 890
+
+[wiki]
+md5_hash = cc7806d4510b3e7a8b149a11d304b60f
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = True
+

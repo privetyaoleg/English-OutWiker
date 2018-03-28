@@ -1,0 +1,16 @@
+* '''Lead''' -  это Individual или Non-Individual сущность (business, affinity group. organization etc) которая имеет потенциальный интерес к покупке продукта
+* '''Customer''' - владеет, как минимум, одним продуктом
+
+(:source lang="c":)
+Lead + Quote = Customer
+(:sourceend:)
+* С точки зрения бизнеса, если одна сущность обладает ''''Auto Product Policy'''' и заинтересована в покупке ''''Home Product Policy'''', то он [!Lead для Home Product Policy!] и [!Customer для Auto Product!] в одно и тоже время.
+* С точки зрения системы он только Customer
+* Если Lead стал Customer, то обратная конвертация невозможна.
+----
+* '''‘Brand’''' ''section''
+''Brands are created in Admin -> Agency/Vendor -> Brand sub-tab''
+Бренды используются в качестве фильтра: пользователи могут видеть объекты только с их брендом
+Если пользователь не ограничен брендом, он видит все сущности (с брендами и
+без)
+----
