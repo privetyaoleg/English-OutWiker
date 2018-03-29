@@ -5,5 +5,5 @@ expand = True
 selectedtab = 0
 
 [Tabs]
-tab_0 = EIS Group/EIS/Policy/Personal Lines/Statuses Quote
+tab_0 = EIS Group/EIS/Claim/Claim Life Cycle
 
