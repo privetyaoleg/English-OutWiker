@@ -5,5 +5,9 @@ expand = True
 selectedtab = 0
 
 [Tabs]
+<<<<<<< HEAD
 tab_0 = EIS Group/EIS/Policy/Personal Lines/Actions Quote
+=======
+tab_0 = EIS Group/EIS/Claim/Claim Life Cycle
+>>>>>>> c01b215247710c6ad8e387bd35266ed2a718f6dd
 
