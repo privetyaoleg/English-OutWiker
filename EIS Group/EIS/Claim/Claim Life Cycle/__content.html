@@ -6,29 +6,69 @@
 
 	<style type='text/css'>
 		body, div, p, table {
-			font-size:16pt;
+			font-size:12pt;
 			font-family:Maiandra GD;
 		}
 
 		img{border:none}
-		body {
-background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
-background: rgba(255,255,255,1);
-background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(245,245,245,1)), color-stop(100%, rgba(225,218,236,1)));
-background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
-background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
-background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
-background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1daec', GradientType=1 );
+		html {
+background-image: url('http://elitefon.ru/images/201211/elitefon.ru_6156.jpg');
+}
+
+.column3 {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-gap: 30px;
+-moz-column-gap: 30px;
+column-gap: 30px;
+-webkit-column-rule: 2px solid #ccc;
+-moz-column-rule: 2px solid #ccc;
+column-rule: 2px solid #ccc;
+}
+
+.column2 {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 2;
+-webkit-column-gap: 30px;
+-moz-column-gap: 30px;
+column-gap: 30px;
+-webkit-column-rule: 2px solid #ccc;
+-moz-column-rule: 2px solid #ccc;
+column-rule: 2px solid #ccc;
 }
 	</style>
 	
 </head>
 
 <body>
-<h2>Вложенные файлы</h2>
-<hr>
-<h2>Дочерние страницы</h2>
+<h3>Claim Life Cycle</h3>
+<ul>
+<li><b><i>Initial</i></b> - состояние означает, что требование с исходными данными было создано. Эти исходные данные не могут быть изменены и обновлены, но проверка все еще не является выполненной . Когда пользователь заполняет все данные, он предоставляет его для дальнейшего инвестигирования по нажатию кнопки «Submit». Данные клейма проверяются системой, если все в порядке - статус изменен на <i>Notification</i>. <br/>
+В статусе <i>Initial</i> пользователь не может создавать функции, платежи и восстановление (features, payments and recoveries).<br/>
+<b><i>FNOL (First notice of loss)</i></b> - Первое уведомление об утере. На вкладке «FNOL» находятся исходные факты клейма которые вносятся в ClaimCore. Он будет виден только тем пользователи, которые работают в колл-центре, принимают отчеты о клеймах (сначала уведомления об утрате. Остальные вкладки , будут видны обработчикам, которые сами не будут видеть вкладку FNOL)</li>
+</ul>
+<ul>
+<li><b><i>Notification</i></b> - состояние означает, что данные клейма проверенны системой успешно и представлены для дальнейшего рассмотрения. За дело принимается специалист более высокого ранга. Если клейм валидный, специалист открывает клейм, выполняя действие «Open Claim», иначе закрывает его. В состоянии <i>Notification</i> пользователь может создавать features, не в состоянии создавать payments и recoveries.</li>
+</ul>
+<ul>
+<li><b><i>Open</i></b> - состояние означает, что клейм проверен и действителен. В этом статусе пользователь может создавать функции, платежи и восстановления (features, payments and recoveries).</li>
+</ul>
+<ul>
+<li><b><i>Closed</i></b> - состояние означает, что требование обрабатывается / завершается. Есть 2 случаи: все платежи производятся или клейм отменяется.</li>
+</ul>
+<ul>
+<li><b><i>SIU Potential</i></b> - это состояние появляется, если есть подозрения мошенничества и нужно расследование. После этого, клейм может снова обратиться (если это не мошенничество) к <i>Open</i> заявлению или <i>SIU Review</i>, если это наоборот. <i>FNOL</i> не может быть достигнут в таком статусе.</li>
+</ul>
+<ul>
+<li><b><i>SIU Review</i></b> - необходимо для обработки мошеннических действий по клейму и после должен быть закрыт как поддельный (fraudulent) . <i>FNOL</i> не может быть достигнуто в таком статусе</li>
+</ul>
 </body>
 </html>

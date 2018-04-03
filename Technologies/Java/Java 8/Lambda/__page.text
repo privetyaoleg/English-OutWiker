@@ -1,0 +1,64 @@
+!!! Функциональный интерфейс
+
+* '''Функциональным интерфейсом''' называет интерфейс с единственным абстрактным методом, который и является типом лямбда-выражения.
+
+(:source lang="java" linenum:)
+// Функциональный интерфейс
+
+		 /*
+
+			Predicate<T> - 					boolean test(T t);
+			BinaryOperator<T> - 			R apply(T t, U u);
+			UnaryOperator<T> -			T apply(T t);
+			Function<T,R> - 				R apply(T t);
+			Consumer<T> - 				void accept(T t);
+			Supplier<T> - 					T get();
+
+		 */
+		
+		UnaryOperator<Integer> uo = x -> x * 2;
+		uo.apply(10); 											// 20
+		
+		Predicate<Integer> predicate = x -> x > 5;
+		boolean result = predicate.test(20);				 // true
+
+(:sourceend:)
+
+[[Package java.util.function - List of Functional Interfaces -> https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html]]
+
+
+----
+
+* ''''Лямбда-выражение'''' – это безымянный метод, который служит для передачи поведения из одного места программы в другое так, будто это данные.
+
+(:source lang="java" tabwidth="0" linenum:)
+
+	//Различные способы записи лямбда-выражений 
+
+	Runnable noArguments = () -> System.out.println("Hello World");
+
+	ActionListener oneArgument = event -> System.out.println("button clicked");
+
+	Runnable multiStatement = () -> {
+		System.out.print("Hello");
+		System.out.println(" World"); 
+	}; 
+
+	BinaryOperator<Long> add = (x, y) -> x + y;
+
+	BinaryOperator<Long> addExplicit = (Long x, Long y) -> x + y;
+(:sourceend:)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
