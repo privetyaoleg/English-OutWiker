@@ -3,15 +3,20 @@ type = wiki
 tags = проверка
 order = 0
 creationdatetime = 2018-03-29 21:33:13.851000
-datetime = 2018-03-29 22:05:42.673000
-cursorposition = 1293
+datetime = 2018-03-30 22:57:06.315000
+cursorposition = 1382
+uid = __f7e7adb5-b94c-4b12-9be0-40597ee721bb
 
 [wiki]
+<<<<<<< HEAD
 md5_hash = c20cb53a18678d0fd73cad52059dba29
+=======
+md5_hash = fe3ec93f096cb440f9dc8d03bc64ea44
+>>>>>>> refs/remotes/origin/master
 
 [Misc]
 pageindex = 1
 
 [Tree]
-expand = True
+expand = False
 

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:12pt;
+			font-family:Maiandra GD;
+		}
+
+		img{border:none}
+		html {
+background-image: url('http://elitefon.ru/images/201211/elitefon.ru_6156.jpg');
+}
+.column3 {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-gap: 30px;
+-moz-column-gap: 30px;
+column-gap: 30px;
+-webkit-column-rule: 2px solid #ccc;
+-moz-column-rule: 2px solid #ccc;
+column-rule: 2px solid #ccc;
+}
+.column2 {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 2;
+-webkit-column-gap: 30px;
+-moz-column-gap: 30px;
+column-gap: 30px;
+-webkit-column-rule: 2px solid #ccc;
+-moz-column-rule: 2px solid #ccc;
+column-rule: 2px solid #ccc;
+}
+.tableText {
+width: 100%; /* Ширина таблицы */
+}
+td {
+padding: 5px; /* Поля в ячейках */
+vertical-align: top; /* Выравнивание по верхнему краю ячеек */
+}
+	</style>
+	<STYLE>.highlight-default .hll { background-color: #ffffcc }
+.highlight-default  { background: #f8f8f8; }
+.highlight-default .c { color: #408080; font-style: italic } /* Comment */
+.highlight-default .err { border: 1px solid #FF0000 } /* Error */
+.highlight-default .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight-default .o { color: #666666 } /* Operator */
+.highlight-default .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight-default .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight-default .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight-default .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight-default .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight-default .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight-default .gd { color: #A00000 } /* Generic.Deleted */
+.highlight-default .ge { font-style: italic } /* Generic.Emph */
+.highlight-default .gr { color: #FF0000 } /* Generic.Error */
+.highlight-default .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight-default .gi { color: #00A000 } /* Generic.Inserted */
+.highlight-default .go { color: #888888 } /* Generic.Output */
+.highlight-default .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight-default .gs { font-weight: bold } /* Generic.Strong */
+.highlight-default .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight-default .gt { color: #0044DD } /* Generic.Traceback */
+.highlight-default .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight-default .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight-default .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight-default .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight-default .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight-default .kt { color: #B00040 } /* Keyword.Type */
+.highlight-default .m { color: #666666 } /* Literal.Number */
+.highlight-default .s { color: #BA2121 } /* Literal.String */
+.highlight-default .na { color: #7D9029 } /* Name.Attribute */
+.highlight-default .nb { color: #008000 } /* Name.Builtin */
+.highlight-default .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight-default .no { color: #880000 } /* Name.Constant */
+.highlight-default .nd { color: #AA22FF } /* Name.Decorator */
+.highlight-default .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight-default .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight-default .nf { color: #0000FF } /* Name.Function */
+.highlight-default .nl { color: #A0A000 } /* Name.Label */
+.highlight-default .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight-default .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight-default .nv { color: #19177C } /* Name.Variable */
+.highlight-default .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight-default .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight-default .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight-default .mf { color: #666666 } /* Literal.Number.Float */
+.highlight-default .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight-default .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight-default .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight-default .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight-default .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight-default .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight-default .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight-default .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight-default .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight-default .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight-default .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight-default .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight-default .sx { color: #008000 } /* Literal.String.Other */
+.highlight-default .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight-default .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight-default .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight-default .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight-default .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight-default .vc { color: #19177C } /* Name.Variable.Class */
+.highlight-default .vg { color: #19177C } /* Name.Variable.Global */
+.highlight-default .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight-default .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight-default .il { color: #666666 } /* Literal.Number.Integer.Long */
+.highlight-default pre {padding: 0px; border: none; color: inherit; background-color: inherit; margin:0px; }
+.highlight-default table {padding: 0px; border: none;}
+.highlight-defaulttable td {border-width:0; vertical-align: baseline; }
+.highlight-defaulttable tr {vertical-align: baseline; }
+.highlight-defaulttable tbody {vertical-align: baseline; }
+.highlight-defaulttable td.code {width:100%; }
+.source-block pre {padding: 0px; border: none; color: inherit; background-color: inherit; }
+.linenodiv pre {padding: 0px; border: none; color: inherit; background-color: inherit; }
+div.source-block {border-style: solid; border-color: gray; border-width: 1px; }</STYLE><STYLE>div.highlight-default{padding: 1em; }</STYLE><STYLE>div.spoiler_style1 {
+    padding: 3px; 
+    border: 1px solid #d8d8d8; 
+    }</STYLE><STYLE>div.spoiler_style2 {
+    text-transform: uppercase; 
+    border-bottom: 1px solid #CCCCCC; 
+    margin-bottom: 3px; 
+    font-size: 0.8em; 
+    font-weight: bold; 
+    display: block;
+    }</STYLE>
+</head>
+
+<body>
+<h2>Способы создания стримов</h2>
+<div class="source-block">
+<table class="highlight-defaulttable">
+<tr>
+<td class="linenos"><div class="linenodiv">
+<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28</pre>
+</div></td>
+<td class="code"><div class="highlight-default">
+<pre><span></span><span class="c1">// 1. Классический: Создание стрима из коллекции - collection.stream()</span>
+<span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">collection</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">&quot;a1&quot;</span><span class="o">,</span> <span class="s">&quot;a2&quot;</span><span class="o">,</span> <span class="s">&quot;a3&quot;</span><span class="o">);</span>
+<span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromCollection</span> <span class="o">=</span> <span class="n">collection</span><span class="o">.</span><span class="na">stream</span><span class="o">();</span>
+
+<span class="c1">// 2. Создание стрима из значений - Stream.of(значение1,… значениеN)</span>
+<span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromValues</span> <span class="o">=</span> <span class="n">Stream</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="s">&quot;a1&quot;</span><span class="o">,</span> <span class="s">&quot;a2&quot;</span><span class="o">,</span> <span class="s">&quot;a3&quot;</span><span class="o">);</span>
+
+<span class="c1">// 3. Создание стрима из массива - Arrays.stream(массив)</span>
+<span class="n">String</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="o">{</span><span class="s">&quot;a1&quot;</span><span class="o">,</span><span class="s">&quot;a2&quot;</span><span class="o">,</span><span class="s">&quot;a3&quot;</span><span class="o">};</span>                     
+<span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromArrays</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">stream</span><span class="o">(</span><span class="n">array</span><span class="o">);</span>
+
+<span class="c1">// 4. Создание стрима из файла (каждая строка в файле будет отдельным элементом в стриме) - Files.lines(путь_к_файлу)</span>
+<span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromFiles</span> <span class="o">=</span> <span class="n">Files</span><span class="o">.</span><span class="na">lines</span><span class="o">(</span><span class="n">Paths</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">&quot;file.txt&quot;</span><span class="o">))</span>
+
+<span class="c1">// 5. Создание стрима из строки - «строка».chars()</span>
+<span class="n">IntStream</span> <span class="n">streamFromString</span> <span class="o">=</span> <span class="s">&quot;123&quot;</span><span class="o">.</span><span class="na">chars</span><span class="o">()</span>
+
+<span class="c1">// 6. С помощью Stream.builder - Stream.builder().add(...)....build()</span>
+<span class="n">Stream</span><span class="o">.</span><span class="na">builder</span><span class="o">().</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;a1&quot;</span><span class="o">).</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;a2&quot;</span><span class="o">).</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;a3&quot;</span><span class="o">).</span><span class="na">build</span><span class="o">()</span>
+
+<span class="c1">// 7. Создание параллельного стрима - collection.parallelStream()</span>
+<span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">stream</span> <span class="o">=</span> <span class="n">collection</span><span class="o">.</span><span class="na">parallelStream</span><span class="o">();</span>
+
+<span class="c1">// 8. Создание бесконечных стрима с помощью Stream.iterate - Stream.iterate(начальное_условие, выражение_генерации)</span>
+<span class="n">Stream</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">streamFromIterate</span> <span class="o">=</span> <span class="n">Stream</span><span class="o">.</span><span class="na">iterate</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">n</span> <span class="o">-&gt;</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span>  <span class="c1">// 1, 2, 3, 4,… N. </span>
+
+<span class="c1">// 9. Создание бесконечных стрима с помощью Stream.generate - Stream.generate(выражение_генерации)</span>
+<span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromGenerate</span> <span class="o">=</span> <span class="n">Stream</span><span class="o">.</span><span class="na">generate</span><span class="o">(()</span> <span class="o">-&gt;</span> <span class="s">&quot;a1&quot;</span><span class="o">)</span>
+</pre>
+</div></td>
+</tr>
+</table></div><br/>
+<br/>
+        <div class="spoiler_style1"><div class="spoiler_style2"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Свернуть</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Examples</a>'; }" /><b></b><a href="#" onClick="return false;">Examples</a></span></div><div class="spoiler_quotecontent"><div style="display: none;"><div class="source-block">
+<table class="highlight-defaulttable">
+<tr>
+<td class="linenos"><div class="linenodiv">
+<pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58</pre>
+</div></td>
+<td class="code"><div class="highlight-default">
+<pre><span></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Test buildStream start&quot;</span><span class="o">);</span>
+
+        <span class="c1">// Создание стрима из значений</span>
+        <span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromValues</span> <span class="o">=</span> <span class="n">Stream</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="s">&quot;a1&quot;</span><span class="o">,</span> <span class="s">&quot;a2&quot;</span><span class="o">,</span> <span class="s">&quot;a3&quot;</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;streamFromValues = &quot;</span> <span class="o">+</span> <span class="n">streamFromValues</span><span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">()));</span> <span class="c1">// напечатает streamFromValues = [a1, a2, a3]</span>
+
+        <span class="c1">// Создание стрима из массива</span>
+        <span class="n">String</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="o">{</span><span class="s">&quot;a1&quot;</span><span class="o">,</span><span class="s">&quot;a2&quot;</span><span class="o">,</span><span class="s">&quot;a3&quot;</span><span class="o">};</span>
+        <span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromArrays</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">stream</span><span class="o">(</span><span class="n">array</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;streamFromArrays = &quot;</span> <span class="o">+</span> <span class="n">streamFromArrays</span><span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">()));</span> <span class="c1">// напечатает streamFromArrays = [a1, a2, a3]</span>
+
+        <span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromArrays1</span> <span class="o">=</span> <span class="n">Stream</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">array</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;streamFromArrays1 = &quot;</span> <span class="o">+</span> <span class="n">streamFromArrays1</span><span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">()));</span> <span class="c1">// напечатает streamFromArrays = [a1, a2, a3]</span>
+
+        <span class="c1">// Создание стрима из файла (каждая запись в файле будет отдельной строкой в стриме)</span>
+        <span class="n">File</span> <span class="n">file</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">&quot;1.tmp&quot;</span><span class="o">);</span>
+        <span class="n">file</span><span class="o">.</span><span class="na">deleteOnExit</span><span class="o">();</span>
+        <span class="n">PrintWriter</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PrintWriter</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
+        <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;a1&quot;</span><span class="o">);</span>
+        <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;a2&quot;</span><span class="o">);</span>
+        <span class="n">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;a3&quot;</span><span class="o">);</span>
+        <span class="n">out</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+
+        <span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromFiles</span> <span class="o">=</span> <span class="n">Files</span><span class="o">.</span><span class="na">lines</span><span class="o">(</span><span class="n">Paths</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">file</span><span class="o">.</span><span class="na">getAbsolutePath</span><span class="o">()));</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;streamFromFiles = &quot;</span> <span class="o">+</span> <span class="n">streamFromFiles</span><span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">()));</span> <span class="c1">// напечатает streamFromFiles = [a1, a2, a3]</span>
+
+        <span class="c1">// Создание стрима из коллекции</span>
+        <span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">collection</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">&quot;a1&quot;</span><span class="o">,</span> <span class="s">&quot;a2&quot;</span><span class="o">,</span> <span class="s">&quot;a3&quot;</span><span class="o">);</span>
+        <span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromCollection</span> <span class="o">=</span> <span class="n">collection</span><span class="o">.</span><span class="na">stream</span><span class="o">();</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;streamFromCollection = &quot;</span> <span class="o">+</span> <span class="n">streamFromCollection</span><span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">()));</span> <span class="c1">// напечатает streamFromCollection = [a1, a2, a3]</span>
+
+        <span class="c1">// Создание числового стрима из строки</span>
+        <span class="n">IntStream</span> <span class="n">streamFromString</span> <span class="o">=</span> <span class="s">&quot;123&quot;</span><span class="o">.</span><span class="na">chars</span><span class="o">();</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&quot;streamFromString = &quot;</span><span class="o">);</span>
+        <span class="n">streamFromString</span><span class="o">.</span><span class="na">forEach</span><span class="o">((</span><span class="n">e</span><span class="o">)-&gt;</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">e</span> <span class="o">+</span> <span class="s">&quot; , &quot;</span><span class="o">));</span> <span class="c1">// напечатает streamFromString = 49 , 50 , 51 ,</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">();</span>
+
+        <span class="c1">// С помощью Stream.builder</span>
+        <span class="n">Stream</span><span class="o">.</span><span class="na">Builder</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">Stream</span><span class="o">.</span><span class="na">builder</span><span class="o">();</span>
+        <span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromBuilder</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;a1&quot;</span><span class="o">).</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;a2&quot;</span><span class="o">).</span><span class="na">add</span><span class="o">(</span><span class="s">&quot;a3&quot;</span><span class="o">).</span><span class="na">build</span><span class="o">();</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;streamFromBuilder = &quot;</span> <span class="o">+</span> <span class="n">streamFromBuilder</span><span class="o">.</span><span class="na">collect</span><span class="o">((</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">())));</span> <span class="c1">// напечатает streamFromFiles = [a1, a2, a3]</span>
+
+        <span class="c1">// Создание бесконечных стримов</span>
+        <span class="c1">// С помощью Stream.iterate</span>
+        <span class="n">Stream</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">streamFromIterate</span> <span class="o">=</span> <span class="n">Stream</span><span class="o">.</span><span class="na">iterate</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">n</span> <span class="o">-&gt;</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">2</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;streamFromIterate = &quot;</span> <span class="o">+</span> <span class="n">streamFromIterate</span><span class="o">.</span><span class="na">limit</span><span class="o">(</span><span class="mi">3</span><span class="o">).</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">()));</span> <span class="c1">// напечатает streamFromIterate = [1, 3, 5]</span>
+
+        <span class="c1">// С помощью Stream.generate</span>
+        <span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamFromGenerate</span> <span class="o">=</span> <span class="n">Stream</span><span class="o">.</span><span class="na">generate</span><span class="o">(()</span> <span class="o">-&gt;</span> <span class="s">&quot;a1&quot;</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;streamFromGenerate = &quot;</span> <span class="o">+</span> <span class="n">streamFromGenerate</span><span class="o">.</span><span class="na">limit</span><span class="o">(</span><span class="mi">3</span><span class="o">).</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">()));</span> <span class="c1">// напечатает streamFromGenerate = [a1, a1, a1]</span>
+
+        <span class="c1">// Создать пустой стрим</span>
+        <span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">streamEmpty</span> <span class="o">=</span> <span class="n">Stream</span><span class="o">.</span><span class="na">empty</span><span class="o">();</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;streamEmpty = &quot;</span> <span class="o">+</span> <span class="n">streamEmpty</span><span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">()));</span> <span class="c1">// напечатает streamEmpty = []</span>
+
+        <span class="c1">// Создать параллельный стрим из коллекции</span>
+        <span class="n">Stream</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">parallelStream</span> <span class="o">=</span> <span class="n">collection</span><span class="o">.</span><span class="na">parallelStream</span><span class="o">();</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;parallelStream = &quot;</span> <span class="o">+</span> <span class="n">parallelStream</span><span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">()));</span> <span class="c1">// напечатает parallelStream = [a1, a2, a3]</span>
+</pre>
+</div></td>
+</tr>
+</table></div></div></div></div>
+</body>
+</html>

@@ -6,12 +6,52 @@
 
 	<style type='text/css'>
 		body, div, p, table {
-			font-size:10pt;
-			font-family:Verdana;
+			font-size:12pt;
+			font-family:Maiandra GD;
 		}
 
 		img{border:none}
-		
+		body {
+background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(245,245,245,1)), color-stop(100%, rgba(225,218,236,1)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(225,218,236,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1daec', GradientType=1 );
+}
+
+.column3 {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-gap: 30px;
+-moz-column-gap: 30px;
+column-gap: 30px;
+-webkit-column-rule: 2px solid #ccc;
+-moz-column-rule: 2px solid #ccc;
+column-rule: 2px solid #ccc;
+}
+
+.column2 {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 2;
+-webkit-column-gap: 30px;
+-moz-column-gap: 30px;
+column-gap: 30px;
+-webkit-column-rule: 2px solid #ccc;
+-moz-column-rule: 2px solid #ccc;
+column-rule: 2px solid #ccc;
+}
 	</style>
 	
 </head>
@@ -21,9 +61,16 @@
 <br/>
 <ul>
 <li><b>Страховой полис</b> - это договор между страховщиком и страхователем, известный как "policyholder", который определяет страховые случаи, которые страховщик юридически обязан платить. В обмен на платежи, страховщик обещает оплатить убытки, вызванные опасностями, которые охватывает Policy.</li>
+</ul>
+<ul>
 <li><b>Quote</b> и <b>Policy</b> - две основные сущности, они могут приобрести много разных состояний и статусов, проходя через жизненный цикл Policy</li>
+</ul>
+<ul>
 <li><b>Quote</b> - это сущность, которая существует в системе до <i>issued</i>, и после она меняется на <i>Policy</i>.</li>
+</ul>
+<ul>
 <li><b>Жизненный цикл полиса</b> - это системы, процессы и процедуры, которые используются людьми, ответственные за обработку политики.</li>
 </ul>
+<hr>
 </body>
 </html>
