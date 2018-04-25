@@ -11,7 +11,7 @@
 * Step 3-4 from ticket BO-15886 cannot be automated in view of the complexity and labour intensity of these steps in terms of automation.
 
 
-* Whether fields 'Make', 'Model', 'Model Year', 'Series' should be automatically changed when you change VIN number by pressing 'Modify' -> 'Validate' during Endorsement for AUTO policy on the 'Vehicle' tab?
+* Whether fields 'Make', 'Model', 'Model Year', 'Series' should be automatically changed when you overwrite a new VIN number by pressing 'Modify' -> 'Validate' during Endorsement for AUTO policy on the 'Vehicle' tab?
 
 
 * Please, respond to the question in the ticket. 
