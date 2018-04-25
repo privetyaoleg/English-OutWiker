@@ -5,13 +5,5 @@ expand = True
 selectedtab = 0
 
 [Tabs]
-<<<<<<< HEAD
 tab_0 = English/Gramar/Tenses/Continious/Present Continious
-=======
-<<<<<<< HEAD
-tab_0 = EIS Group/EIS/Claim
-=======
-tab_0 = Technologies/Java/Java 8/Lambda
->>>>>>> refs/remotes/origin/master
->>>>>>> 3b4dd5ca4c52f3304ccf9b4eb95a04edd0bcda99
 
