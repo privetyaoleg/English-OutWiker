@@ -5,5 +5,9 @@ expand = True
 selectedtab = 0
 
 [Tabs]
+<<<<<<< HEAD
 tab_0 = English/Gramar/Tenses/Continious/Present Continious
+=======
+tab_0 = EIS Group/Jira
+>>>>>>> cffe9feb1c643cebfaa8a9fe3fdcf26c9c58e7a3
 

@@ -90,24 +90,68 @@
 .highlight-defaulttable td.code {width:100%; }
 .source-block pre {padding: 0px; border: none; color: inherit; background-color: inherit; }
 .linenodiv pre {padding: 0px; border: none; color: inherit; background-color: inherit; }
-div.source-block {border-style: solid; border-color: gray; border-width: 1px; }</STYLE><STYLE>div.highlight-default{padding: 1em; }</STYLE>
+div.source-block {border-style: solid; border-color: gray; border-width: 1px; }</STYLE><STYLE>div.highlight-default{padding: 1em; }</STYLE><STYLE>div.spoiler_style1 {
+    padding: 3px; 
+    border: 1px solid #d8d8d8; 
+    }</STYLE><STYLE>div.spoiler_style2 {
+    text-transform: uppercase; 
+    border-bottom: 1px solid #CCCCCC; 
+    margin-bottom: 3px; 
+    font-size: 0.8em; 
+    font-weight: bold; 
+    display: block;
+    }</STYLE>
 </head>
 
 <body>
-<h2>map</h2>
 <br/>
-<b><i>map(Function<T,R>) </i></b> - преобразует один обьект в другой<br/>
-<div class="source-block">
+        <div class="spoiler_style1"><div class="spoiler_style2"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Collapse</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Заполнение одной табы</a>'; }" /><b></b><a href="#" onClick="return false;">Заполнение одной табы</a></span></div><div class="spoiler_quotecontent"><div style="display: none;"><div class="source-block">
 <table class="highlight-defaulttable">
 <tr>
 <td class="linenos"><div class="linenodiv">
-<pre>1</pre>
+<pre>1
+2
+3
+4</pre>
 </div></td>
 <td class="code"><div class="highlight-default">
-<pre><span></span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">collected</span> <span class="o">=</span> <span class="n">Stream</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="s">&quot;a&quot;</span><span class="o">,</span> <span class="s">&quot;b&quot;</span><span class="o">,</span> <span class="s">&quot;hello&quot;</span><span class="o">).</span><span class="na">map</span><span class="o">(</span><span class="n">string</span> <span class="o">-&gt;</span> <span class="n">string</span><span class="o">.</span><span class="na">toUpperCase</span><span class="o">()).</span><span class="na">collect</span><span class="o">(</span><span class="n">toList</span><span class="o">());</span>
+<pre><span></span><span class="k">new</span> <span class="n">MPDDiscountTab</span><span class="o">().</span><span class="na">fillTab</span><span class="o">(</span><span class="n">tdSpecific</span><span class="o">.</span><span class="na">getTestData</span><span class="o">(</span><span class="s">&quot;TestData&quot;</span><span class="o">));</span>
+
+<span class="n">claim</span><span class="o">.</span><span class="na">evaluation</span><span class="o">().</span><span class="na">getDefaultView</span><span class="o">().</span><span class="na">getTab</span><span class="o">(</span><span class="n">DamageCEAssignmentTab</span><span class="o">.</span><span class="na">class</span><span class="o">).</span><span class="na">fillTab</span><span class="o">(</span><span class="n">tdClaimRenters</span><span class="o">.</span>
+                <span class="nf">getTestData</span><span class="o">(</span><span class="s">&quot;DataGather&quot;</span><span class="o">,</span> <span class="s">&quot;Adjust_CEAssignment&quot;</span><span class="o">));</span>
 </pre>
 </div></td>
 </tr>
-</table></div>
+</table></div></div></div></div> <br/>
+<br/>
+        <div class="spoiler_style1"><div class="spoiler_style2"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Collapse</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>ADJUST одного значения</a>'; }" /><b></b><a href="#" onClick="return false;">ADJUST одного значения</a></span></div><div class="spoiler_quotecontent"><div style="display: none;"><div class="source-block">
+<table class="highlight-defaulttable">
+<tr>
+<td class="linenos"><div class="linenodiv">
+<pre>1
+2</pre>
+</div></td>
+<td class="code"><div class="highlight-default">
+<pre><span></span><span class="n">tdClaimRenters</span><span class="o">.</span><span class="na">getTestData</span><span class="o">(</span><span class="s">&quot;DataGather&quot;</span><span class="o">,</span> <span class="s">&quot;TestData&quot;</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">adjust</span><span class="o">(</span><span class="n">TestData</span><span class="o">.</span><span class="na">makeKeyPath</span><span class="o">(</span><span class="s">&quot;DamageCEAssignmentTab&quot;</span><span class="o">,</span> <span class="s">&quot;Claim could be opened without CE assignment&quot;</span><span class="o">),</span> <span class="s">&quot;No&quot;</span><span class="o">)</span>
+</pre>
+</div></td>
+</tr>
+</table></div></div></div></div> <br/>
+<br/>
+        <div class="spoiler_style1"><div class="spoiler_style2"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Collapse</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Navigation</a>'; }" /><b></b><a href="#" onClick="return false;">Navigation</a></span></div><div class="spoiler_quotecontent"><div style="display: none;"><div class="source-block">
+<table class="highlight-defaulttable">
+<tr>
+<td class="linenos"><div class="linenodiv">
+<pre>1
+2</pre>
+</div></td>
+<td class="code"><div class="highlight-default">
+<pre><span></span><span class="n">Page</span><span class="o">.</span><span class="na">Navigation</span><span class="o">.</span><span class="na">toLeftTreeMenu</span><span class="o">(</span><span class="s">&quot;CE Assignment&quot;</span><span class="o">);</span>
+<span class="n">Page</span><span class="o">.</span><span class="na">Navigation</span><span class="o">.</span><span class="na">toViewTab</span><span class="o">(</span><span class="n">VEHICLE</span><span class="o">.</span><span class="na">get</span><span class="o">());</span>
+</pre>
+</div></td>
+</tr>
+</table></div></div></div></div>
 </body>
 </html>

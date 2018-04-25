@@ -1,0 +1,24 @@
+(:spoiler expandtext='Заполнение одной табы':)
+
+(:source lang="java" linenum:)
+
+new MPDDiscountTab().fillTab(tdSpecific.getTestData("TestData"));
+
+claim.evaluation().getDefaultView().getTab(DamageCEAssignmentTab.class).fillTab(tdClaimRenters.
+                getTestData("DataGather", "Adjust_CEAssignment"));
+(:sourceend:)
+(:spoilerend:) 
+(:spoiler expandtext='ADJUST одного значения':)
+
+(:source lang="java" linenum:)
+tdClaimRenters.getTestData("DataGather", "TestData")
+	.adjust(TestData.makeKeyPath("DamageCEAssignmentTab", "Claim could be opened without CE assignment"), "No")
+(:sourceend:)
+(:spoilerend:) 
+(:spoiler expandtext='Navigation':)
+
+(:source lang="java" linenum:)
+Page.Navigation.toLeftTreeMenu("CE Assignment");
+Page.Navigation.toViewTab(VEHICLE.get());
+(:sourceend:)
+(:spoilerend:) 
