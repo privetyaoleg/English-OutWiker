@@ -1,0 +1,18 @@
+!!! filter
+
+''''map(Function<T,R>) '''' - преобразует один обьект в другой
+(:source lang="java" linenum:)
+ /*
+           Predicate<T>  				       - boolean test(T t);
+           filter(Predicate<T>)             - фильтрует поток(колекцию)
+           collect(Collectors.toSet())      - преобразует поток в коллекцию
+                             .toList()
+                             .toMap()
+ */
+Set<String> set = listStr.stream().filter(word -> word.length() == 3).collect(Collectors.toSet());
+listInt.stream().filter(x -> x > 10).collect(Collectors.toList());
+
+List<String> beginningWithNumbers= Stream.of("a", "1abc", "abc1").
+			filter(value -> isDigit(value.charAt(0))).collect(Collectors.toList()); 
+
+(:sourceend:)

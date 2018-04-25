@@ -1,0 +1,15 @@
+!!! summaryStatistics
+
+* Здесь мы печатаем на экране сводные данные о длительности произ-ведений. Вместо того чтобы производить вычисления самостоятельно, мы отображаем каждое произведение на его длительность с помощью метода потока, специализированного для примитива, mapToInt. По-скольку этот метод возвращает объект типа IntStream, мы можем вы-звать его метод summaryStatistics, который вычисляет различные ста-тистические характеристики: минимум, максимум, среднее и сумму. Этот метод имеется во всех специализированных потоках, в част-ности в DoubleStream и LongStream. Можно также вычислять отдельные характеристики, если все сразу не нужны; для этого существуют ме-тоды min, max, average и sum. 
+
+(:source lang="java" linenum:)
+
+public static void printTrackLengthStatistics(Album album) {
+		IntSummaryStatistics trackLengthStats= album.getTracks().mapToInt(track -> track.getLength()).summaryStatistics();
+		System.out.printf("Max: %d, Min: %d, Ave: %f, Sum: %d",trackLengthStats.getMax(),
+																										                         	trackLengthStats.getMin(),
+																									                         		trackLengthStats.getAverage(),
+																										                         	trackLengthStats.getSum()); 
+}
+
+(:sourceend:)

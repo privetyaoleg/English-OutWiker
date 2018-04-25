@@ -1,0 +1,8 @@
+!!! collect(toList())
+
+collect(toList()) – энергичная операция, порождающая список из значений в объекте Stream.
+(:source lang="java" linenum:)
+
+List<String> collected = Stream.of("a", "b", "c").collect(Collectors.toList()); 
+
+(:sourceend:)

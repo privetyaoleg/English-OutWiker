@@ -78,7 +78,7 @@
 </table>
 (:thumbgallery cols=1 px=150:)
 (:spoilerend:)(:spoiler expandtext='Useful phrases':)
-<div class="column3">
+<div class = 'column3'>
 	* ''''the day before yesterday'''' — позавчера 
 
 	* ''''yesterday morning'''' — вчера утром 
