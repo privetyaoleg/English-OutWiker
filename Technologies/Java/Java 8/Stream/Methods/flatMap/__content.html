@@ -6,49 +6,12 @@
 
 	<style type='text/css'>
 		body, div, p, table {
-			font-size:12pt;
+			font-size:16pt;
 			font-family:Maiandra GD;
 		}
 
 		img{border:none}
-		html {
-background-image: url('http://elitefon.ru/images/201211/elitefon.ru_6156.jpg');
-}
-.column3 {
--webkit-column-width: 200px;
--moz-column-width: 200px;
-column-width: 200px;
--webkit-column-count: 3;
--moz-column-count: 3;
-column-count: 3;
--webkit-column-gap: 30px;
--moz-column-gap: 30px;
-column-gap: 30px;
--webkit-column-rule: 2px solid #ccc;
--moz-column-rule: 2px solid #ccc;
-column-rule: 2px solid #ccc;
-}
-.column2 {
--webkit-column-width: 200px;
--moz-column-width: 200px;
-column-width: 200px;
--webkit-column-count: 3;
--moz-column-count: 3;
-column-count: 2;
--webkit-column-gap: 30px;
--moz-column-gap: 30px;
-column-gap: 30px;
--webkit-column-rule: 2px solid #ccc;
--moz-column-rule: 2px solid #ccc;
-column-rule: 2px solid #ccc;
-}
-.tableText {
-width: 100%; /* Ширина таблицы */
-}
-td {
-padding: 5px; /* Поля в ячейках */
-vertical-align: top; /* Выравнивание по верхнему краю ячеек */
-}
+		
 	</style>
 	<STYLE>.highlight-default .hll { background-color: #ffffcc }
 .highlight-default  { background: #f8f8f8; }
@@ -170,16 +133,16 @@ div.source-block {border-style: solid; border-color: gray; border-width: 1px; }<
 <span class="cm">*/</span>
 
 <span class="kd">public</span> <span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>   <span class="nf">findLongTracks</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Album</span><span class="o">&gt;</span> <span class="n">albums</span><span class="o">)</span> <span class="o">{</span>
-    <span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">trackNames</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashSet</span><span class="o">&lt;&gt;();</span> 
-    <span class="k">for</span><span class="o">(</span><span class="n">Album</span> <span class="n">album</span> <span class="o">:</span> <span class="n">albums</span><span class="o">)</span> <span class="o">{</span>
-         <span class="k">for</span> <span class="o">(</span><span class="n">Track</span> <span class="n">track</span> <span class="o">:</span> <span class="n">album</span><span class="o">.</span><span class="na">getTrackList</span><span class="o">())</span> <span class="o">{</span>
-           <span class="k">if</span> <span class="o">(</span><span class="n">track</span><span class="o">.</span><span class="na">getLength</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="o">)</span> <span class="o">{</span>
-             <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">track</span><span class="o">.</span><span class="na">getName</span><span class="o">();</span>
-             <span class="n">trackNames</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
-           <span class="o">}</span>
-         <span class="o">}</span>
-    <span class="o">}</span>
-    <span class="k">return</span> <span class="n">trackNames</span><span class="o">;</span> 
+       <span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">trackNames</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashSet</span><span class="o">&lt;&gt;();</span> 
+       <span class="k">for</span><span class="o">(</span><span class="n">Album</span> <span class="n">album</span> <span class="o">:</span> <span class="n">albums</span><span class="o">)</span> <span class="o">{</span>
+                  <span class="k">for</span> <span class="o">(</span><span class="n">Track</span> <span class="n">track</span> <span class="o">:</span> <span class="n">album</span><span class="o">.</span><span class="na">getTrackList</span><span class="o">())</span> <span class="o">{</span>
+                             <span class="k">if</span> <span class="o">(</span><span class="n">track</span><span class="o">.</span><span class="na">getLength</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="o">)</span> <span class="o">{</span>
+                                  <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="n">track</span><span class="o">.</span><span class="na">getName</span><span class="o">();</span>
+                                     <span class="n">trackNames</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+                             <span class="o">}</span>
+                  <span class="o">}</span>
+       <span class="o">}</span>
+       <span class="k">return</span> <span class="n">trackNames</span><span class="o">;</span> 
 <span class="o">}</span>
 
 
