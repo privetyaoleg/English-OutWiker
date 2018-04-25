@@ -5,9 +5,5 @@ expand = True
 selectedtab = 0
 
 [Tabs]
-<<<<<<< HEAD
-tab_0 = EIS Group/EIS/Claim
-=======
-tab_0 = Technologies/Java/Java 8/Lambda
->>>>>>> refs/remotes/origin/master
+tab_0 = Technologies/Java/Java 8/Stream
 

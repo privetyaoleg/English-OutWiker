@@ -1,18 +1,10 @@
 [General]
-type = wiki
-tags = проверка
-order = 1
-creationdatetime = 2018-03-29 22:26:46.314000
-datetime = 2018-03-30 22:11:11.700000
-cursorposition = 2061
-
-[wiki]
-<<<<<<< HEAD
-md5_hash = 29eedce3c2cdb3e55be0409b9f1cc37b
-=======
-md5_hash = 415ed974c149b5cc1a3125b02e4efe7e
->>>>>>> refs/remotes/origin/master
+datetime = 2018-04-04 16:21:39.893621
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 613bed0325f6757762149b80b8b77386
 
