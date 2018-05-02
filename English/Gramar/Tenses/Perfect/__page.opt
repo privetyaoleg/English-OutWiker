@@ -9,3 +9,6 @@ cursorposition = 0
 [wiki]
 md5_hash = ed98416ae8fc19359ff126e358fada2f
 
+[Tree]
+expand = True
+
