@@ -22,3 +22,11 @@ Page.Navigation.toLeftTreeMenu("CE Assignment");
 Page.Navigation.toViewTab(VEHICLE.get());
 (:sourceend:)
 (:spoilerend:) 
+(:spoiler expandtext='Time Setter':)
+
+(:source lang="java" linenum:)
+TimeSetterUtil.getInstance().nextPhase(TimeSetterUtil.getInstance().getCurrentTime().plusDays(305));
+
+TimeSetterUtil.getInstance().getCurrentTime().minusDays(30).format(DateTimeFormatter.ofPattern("MM/dd/YYYY"))
+(:sourceend:)
+(:spoilerend:) 
