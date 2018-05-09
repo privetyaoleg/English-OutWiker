@@ -7,11 +7,11 @@ datetime = 2018-03-20 20:01:23.270000
 cursorposition = 0
 
 [wiki]
-md5_hash = a9c99d1a737bbf7e7358bf9bd6b6c3a7
+md5_hash = 64388a3540cfaaf0f559437d38119bcc
 
 [Misc]
 pageindex = 1
 
 [Tree]
-expand = False
+expand = True
 
