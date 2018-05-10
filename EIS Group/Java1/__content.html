@@ -170,7 +170,7 @@ div.source-block {border-style: solid; border-color: gray; border-width: 1px; }<
 </div></td>
 <td class="code"><div class="highlight-default">
 <pre><span></span><span class="n">tdClaimRenters</span><span class="o">.</span><span class="na">getTestData</span><span class="o">(</span><span class="s">&quot;DataGather&quot;</span><span class="o">,</span> <span class="s">&quot;TestData&quot;</span><span class="o">)</span>
- <span class="o">.</span><span class="na">adjust</span><span class="o">(</span><span class="n">TestData</span><span class="o">.</span><span class="na">makeKeyPath</span><span class="o">(</span><span class="s">&quot;DamageCEAssignmentTab&quot;</span><span class="o">,</span> <span class="s">&quot;Claim could be opened without CE assignment&quot;</span><span class="o">),</span> <span class="s">&quot;No&quot;</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">adjust</span><span class="o">(</span><span class="n">TestData</span><span class="o">.</span><span class="na">makeKeyPath</span><span class="o">(</span><span class="s">&quot;DamageCEAssignmentTab&quot;</span><span class="o">,</span> <span class="s">&quot;Claim could be opened without CE assignment&quot;</span><span class="o">),</span> <span class="s">&quot;No&quot;</span><span class="o">)</span>
 </pre>
 </div></td>
 </tr>
@@ -191,7 +191,7 @@ div.source-block {border-style: solid; border-color: gray; border-width: 1px; }<
 </tr>
 </table></div></div></div></div> <br/>
 <br/>
-        <div class="spoiler_style1"><div class="spoiler_style2"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Collapse</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Time Setter</a>'; }" /><b></b><a href="#" onClick="return false;">Time Setter</a></span></div><div class="spoiler_quotecontent"><div style="display: none;"><div class="source-block">
+        <div class="spoiler_style1"><div class="spoiler_style2"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Свернуть</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Time Setter</a>'; }" /><b></b><a href="#" onClick="return false;">Time Setter</a></span></div><div class="spoiler_quotecontent"><div style="display: none;"><div class="source-block">
 <table class="highlight-defaulttable">
 <tr>
 <td class="linenos"><div class="linenodiv">
@@ -203,6 +203,19 @@ div.source-block {border-style: solid; border-color: gray; border-width: 1px; }<
 <pre><span></span><span class="n">TimeSetterUtil</span><span class="o">.</span><span class="na">getInstance</span><span class="o">().</span><span class="na">nextPhase</span><span class="o">(</span><span class="n">TimeSetterUtil</span><span class="o">.</span><span class="na">getInstance</span><span class="o">().</span><span class="na">getCurrentTime</span><span class="o">().</span><span class="na">plusDays</span><span class="o">(</span><span class="mi">305</span><span class="o">));</span>
 
 <span class="n">TimeSetterUtil</span><span class="o">.</span><span class="na">getInstance</span><span class="o">().</span><span class="na">getCurrentTime</span><span class="o">().</span><span class="na">minusDays</span><span class="o">(</span><span class="mi">30</span><span class="o">).</span><span class="na">format</span><span class="o">(</span><span class="n">DateTimeFormatter</span><span class="o">.</span><span class="na">ofPattern</span><span class="o">(</span><span class="s">&quot;MM/dd/YYYY&quot;</span><span class="o">))</span>
+</pre>
+</div></td>
+</tr>
+</table></div></div></div></div> <br/>
+<br/>
+        <div class="spoiler_style1"><div class="spoiler_style2"><span onClick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Свернуть</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b></b><a href=\'#\' onClick=\'return false;\'>Test data</a>'; }" /><b></b><a href="#" onClick="return false;">Test data</a></span></div><div class="spoiler_quotecontent"><div style="display: none;"><div class="source-block">
+<table class="highlight-defaulttable">
+<tr>
+<td class="linenos"><div class="linenodiv">
+<pre>1</pre>
+</div></td>
+<td class="code"><div class="highlight-default">
+<pre><span></span><span class="k">new</span> <span class="n">SimpleDataProvider</span><span class="o">().</span><span class="na">adjust</span><span class="o">(</span><span class="s">&quot;default&quot;</span><span class="o">,</span> <span class="s">&quot;true&quot;</span><span class="o">)</span>
 </pre>
 </div></td>
 </tr>

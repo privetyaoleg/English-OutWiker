@@ -16,4 +16,32 @@
 
 * Please, respond to the question in the ticket. 
 
+
+* Automated as part of the following ticket: https://jira.exigeninsurance.com/browse/BO-1136
+
 (:spoilerend:) 
+(:spoiler expandtext='LINKS':)
+
+* '''Test case'''
+** test execution -> is executed by
+** test design task -> component of
+** bug -> blocked by
+** bug -> fails because of
+
+
+* '''Bug'''
+** new feature -> related to
+** test case -> found on execution of
+
+(:spoilerend:) 
+
+<hr class ='packmanline' />
+
+hr.packmanline{
+width:100%;
+aling: centre;
+border: 0;
+height: 35px;
+background-image: url('https://image.ibb.co/jbXody/IMG_9567.png');
+background-repeat: no-repeat;
+}

@@ -30,3 +30,9 @@ TimeSetterUtil.getInstance().nextPhase(TimeSetterUtil.getInstance().getCurrentTi
 TimeSetterUtil.getInstance().getCurrentTime().minusDays(30).format(DateTimeFormatter.ofPattern("MM/dd/YYYY"))
 (:sourceend:)
 (:spoilerend:) 
+(:spoiler expandtext='Test data':)
+(:source lang="java" linenum:)
+new SimpleDataProvider().adjust("default", "true")
+(:sourceend:)
+(:spoilerend:) 
+

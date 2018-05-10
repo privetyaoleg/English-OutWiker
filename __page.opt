@@ -5,9 +5,5 @@ expand = True
 selectedtab = 0
 
 [Tabs]
-<<<<<<< HEAD
-tab_0 = Technologies/Java/Java 8/Stream/Methods/flatMap
-=======
-tab_0 = English/Other/Numbers
->>>>>>> 886d92264cc6f420e90a8bb61687f1c58e525068
+tab_0 = EIS Group/Jira
 
