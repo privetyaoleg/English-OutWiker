@@ -1,13 +1,15 @@
-<<<<<<< HEAD
-=======
 [General]
-datetime = 2018-04-04 16:21:39.893621
-cursorposition = 0
+type = wiki
+tags = проверка
+order = 1
+creationdatetime = 2018-03-29 22:26:46.314000
+datetime = 2018-03-30 22:11:11.700000
+cursorposition = 2061
+selectedtab = 0
+
+[wiki]
+md5_hash = 9e6317dfdcec16dc5dcdc36328483560
 
 [Misc]
 pageindex = 1
 
-[wiki]
-md5_hash = 613bed0325f6757762149b80b8b77386
-
->>>>>>> cffe9feb1c643cebfaa8a9fe3fdcf26c9c58e7a3
