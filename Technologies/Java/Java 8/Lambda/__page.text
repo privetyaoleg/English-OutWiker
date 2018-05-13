@@ -26,9 +26,7 @@
 
 [[Package java.util.function - List of Functional Interfaces -> https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html]]
 
-
-----
-
+<hr class ='packmanline' />
 * ''''Лямбда-выражение'''' – это безымянный метод, который служит для передачи поведения из одного места программы в другое так, будто это данные.
 
 (:source lang="java" tabwidth="0" linenum:)

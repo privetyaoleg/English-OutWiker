@@ -5,17 +5,5 @@ expand = True
 selectedtab = 0
 
 [Tabs]
-<<<<<<< HEAD
-tab_0 = EIS Group/Jira
-=======
-<<<<<<< HEAD
-tab_0 = English/Gramar/Tenses/Perfect/Present Perfect
-=======
-<<<<<<< HEAD
-tab_0 = Technologies/Java/Java 8/Stream/Methods/flatMap
-=======
-tab_0 = English/Other/Numbers
->>>>>>> 886d92264cc6f420e90a8bb61687f1c58e525068
->>>>>>> f65c9035f5cd2ee006308930efd4aa016076fd4b
->>>>>>> 0edc408e0522b712be8a10e8e58f8a237717ee6e
+tab_0 = Technologies/TestNG/Annotations
 

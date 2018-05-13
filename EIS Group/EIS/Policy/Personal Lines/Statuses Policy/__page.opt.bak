@@ -1,0 +1,18 @@
+[General]
+type = wiki
+tags = проверка
+order = 4
+creationdatetime = 2018-03-28 20:36:12.042000
+datetime = 2018-03-28 20:36:12.120000
+cursorposition = 0
+
+[wiki]
+<<<<<<< HEAD
+md5_hash = 4f8d5a45f7b2a901cb6dccc7f0cd506b
+=======
+md5_hash = 490d3e28735c32f8a1a6ff014d35202b
+>>>>>>> 0edc408e0522b712be8a10e8e58f8a237717ee6e
+
+[Misc]
+pageindex = 1
+

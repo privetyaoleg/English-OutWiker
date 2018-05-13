@@ -5,4 +5,12 @@ collect(toList()) – энергичная операция, порождающ�
 
 List<String> collected = Stream.of("a", "b", "c").collect(Collectors.toList()); 
 
+
+// Нахождение среднего числа произведений во всех аль-бомах из списка 
+public double averageNumberOfTracks(List<Album> albums) {
+    return albums.stream().collect(Collectors.averagingInt(album -> album.getTrackList().size())); 
+} 
+
+int x =  listInt.stream().collect(Collectors.averagingInt(album -> album)).intValue();
+
 (:sourceend:)

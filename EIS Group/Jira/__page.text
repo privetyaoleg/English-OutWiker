@@ -37,11 +37,3 @@
 
 <hr class ='packmanline' />
 
-hr.packmanline{
-width:100%;
-aling: centre;
-border: 0;
-height: 35px;
-background-image: url('https://image.ibb.co/jbXody/IMG_9567.png');
-background-repeat: no-repeat;
-}

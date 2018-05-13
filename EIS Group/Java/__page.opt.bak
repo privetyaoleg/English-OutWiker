@@ -1,0 +1,22 @@
+[General]
+type = wiki
+tags = 
+order = 1
+creationdatetime = 2018-04-25 15:01:29.901000
+datetime = 2018-05-02 15:53:08.639000
+cursorposition = 1087
+
+[wiki]
+<<<<<<< HEAD
+md5_hash = 0b4d042f18673fa46762b16b05f65712
+=======
+<<<<<<< HEAD
+md5_hash = b3bc18f4dc44ea07d3360cd80db378c9
+=======
+md5_hash = ade5c78da3cfa467017742f127fedfa0
+>>>>>>> 886d92264cc6f420e90a8bb61687f1c58e525068
+>>>>>>> f65c9035f5cd2ee006308930efd4aa016076fd4b
+
+[Misc]
+pageindex = 1
+
