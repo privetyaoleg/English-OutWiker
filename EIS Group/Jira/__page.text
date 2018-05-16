@@ -2,6 +2,8 @@
 
 [[Error 500 appears after pressing button "Order Report" during Endorsement -> https://jira.exigeninsurance.com/browse/BO-20737]]
 
+https://jira.exigeninsurance.com/browse/BO-22097
+
 (:spoilerend:) 
 (:spoiler expandtext='PHRASES':)
 
@@ -35,13 +37,4 @@
 
 (:spoilerend:) 
 
-<hr class ='packmanline' />
 
-hr.packmanline{
-width:100%;
-aling: centre;
-border: 0;
-height: 35px;
-background-image: url('https://image.ibb.co/jbXody/IMG_9567.png');
-background-repeat: no-repeat;
-}
