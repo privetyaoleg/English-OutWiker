@@ -7,7 +7,11 @@ datetime = 2018-05-10 15:30:51.776000
 cursorposition = 1260
 
 [wiki]
+<<<<<<< HEAD
 md5_hash = 66e9c2bbaa3bdf18f443312f881c1a1e
+=======
+md5_hash = 36222b69fb7c69c715c0d31ccf378278
+>>>>>>> c9dc7105f5e86238f0811b3cdb71c212127b1670
 
 [Misc]
 pageindex = 1

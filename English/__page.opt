@@ -14,5 +14,5 @@ md5_hash = b6afcc7ba52fa59aeb2c5fd85a148cbb
 pageindex = 1
 
 [Tree]
-expand = False
+expand = True
 

@@ -52,6 +52,31 @@ vertical-align: top; /* Выравнивание по верхнему краю 
 .redtext {
 color: #BE2727;
 }
+hr.style {
+overflow: visible; /* For IE */
+height: 30px;
+border-style: solid;
+border-color: black;
+border-width: 2px 0 0 0;
+border-radius: 30px;
+}
+hr.style:before { /* Not really supposed to work, but does */
+display: block;
+content: "";
+height: 30px;
+margin-top: -35px;
+border-style: solid;
+border-color: black;
+border-width: 0 0 2px 0;
+border-radius: 30px;
+}
+hr.packmanline{
+width:100%;
+align=center;
+border: 0;
+height: 35px;
+background-image: url("https://image.ibb.co/jbXody/IMG_9567.png");
+}
 	</style>
 	<STYLE>div.spoiler_style1 {
     padding: 3px; 
@@ -114,7 +139,7 @@ color: #BE2727;
 </ul>
 </ul>
 </div></div></div> <br/>
-<hr>
+<hr class='style'/>
 <ul>
 <li><b>@DataProvider</b>: Marks a method as supplying data for a test method. The annotated method must return an Object[][] where each Object[] can be assigned the parameter list of the test method. The @Test method that wants to receive data from this DataProvider needs to use a dataProvider name equals to the name of this annotation.</li>
 </ul>
@@ -131,11 +156,11 @@ color: #BE2727;
 </ul>
 </ul>
 </div></div></div> <br/>
-<hr>
+<hr class='style'/>
 <ul>
 <li><b>@Factory</b> : Marks a method as a factory that returns objects that will be used by TestNG as Test classes. The method must return Object[].</li>
 </ul>
-<hr>
+<hr class='style'/>
 <ul>
 <li><b>@Listeners</b>: Defines listeners on a test class.</li>
 </ul>
@@ -148,7 +173,7 @@ color: #BE2727;
 </ul>
 </ul>
 </div></div></div> <br/>
-<hr>
+<hr class='style'/>
 <ul>
 <li><b>@Parameters</b> : Describes how to pass parameters to a @Test method.</li>
 </ul>
@@ -161,7 +186,7 @@ color: #BE2727;
 </ul>
 </ul>
 </div></div></div> <br/>
-<hr>
+<hr class='style'/>
 <ul>
 <li><b>@Test</b>: Marks a class or a method as part of the test.</li>
 </ul>

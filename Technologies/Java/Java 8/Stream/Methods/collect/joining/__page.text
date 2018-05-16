@@ -1,0 +1,35 @@
+* Очень часто сбор данных из потоков организуется для того, чтобы в конце сгенерировать строки. Предположим, что мы хотим создать отформатированный список имен исполнителей, участвовавших в записи альбома. Если, например, альбом называется «Let It Be», то на выходе мы ожидаем получить строку "[George Harrison, John Lennon, Paul McCartney, Ringo Starr, The Beatles]". До выхода Java 8 мы написали бы для решения этой задачи код вроде того, что приведен в примере 5.11. Здесь мы обходим список исполнителей и для построения строки пользуемся объектом StringBuilder. На каждой итерации извлекается имя исполнителя и добавляется в StringBuilder. 
+
+(:source lang="java" linenum:)
+
+StringBuilder builder = new StringBuilder("["); 
+
+for (Artist artist : artists) {
+     if (builder.length() > 1)
+          builder.append(", ");
+
+     String name = artist.getName();
+     builder.append(name); 
+} 
+
+builder.append("]"); 
+String result = builder.toString(); 
+
+(:sourceend:)
+
+* Конечно, этот код шедевром не назовешь. Довольно трудно понять, что здесь происходит, не пройдя по всей программе шаг за шагом. В Java 8 с помощью потоков и коллекторов то же самое можно записать гораздо яснее
+(:source lang="java" linenum:)
+
+String result = artists.stream().map(Artist::getName).
+                          collect(Collectors.joining(", ", "[", "]")); 
+
+
+
+// Example
+
+List<Integer> list2 = Arrays.asList(1, -20, 30, -4, -9, 0, 22);
+
+String result = list2.stream().map(dig -> dig.toString())
+                           .collect(Collectors.joining(", ","[","]")); //  [1, -20, 30, -4, -9, 0, 22]
+
+(:sourceend:)

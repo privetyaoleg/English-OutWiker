@@ -28,8 +28,7 @@
 ** Only for @BeforeMethod and @AfterMethod. If specified, then this setup/teardown method will only be invoked if the corresponding test method belongs to one of the listed groups.
 (:spoilerend:) 
 
-----
-
+<hr class='style'/>
 * '''@DataProvider''': Marks a method as supplying data for a test method. The annotated method must return an Object[][] where each Object[] can be assigned the parameter list of the test method. The @Test method that wants to receive data from this DataProvider needs to use a dataProvider name equals to the name of this annotation.
 (:spoiler expandtext='Parameters':)
 * '''name'''	
@@ -38,28 +37,24 @@
 ** If set to true, tests generated using this data provider are run in parallel. Default value is false.
 (:spoilerend:) 
 
-----
-
+<hr class='style'/>
 * '''@Factory''' : Marks a method as a factory that returns objects that will be used by TestNG as Test classes. The method must return Object[].
 
-----
-
+<hr class='style'/>
 * '''@Listeners''': Defines listeners on a test class.
 (:spoiler expandtext='Parameters':)
 * '''value'''	
 ** An array of classes that extend org.testng.ITestNGListener.
 (:spoilerend:) 
 
-----
-
+<hr class='style'/>
 * '''@Parameters''' : Describes how to pass parameters to a @Test method.
 (:spoiler expandtext='Parameters':)
 * '''value'''	
 ** The list of variables used to fill the parameters of this method.
 (:spoilerend:) 
 
-----
-
+<hr class='style'/>
 * '''@Test''': Marks a class or a method as part of the test.
 (:spoiler expandtext='Parameters':)
 * '''alwaysRun'''	

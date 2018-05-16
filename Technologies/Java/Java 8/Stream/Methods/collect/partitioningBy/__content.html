@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:14pt;
+			font-family:Maiandra GD;
+		}
+
+		img{border:none}
+		html {
+background-image: url('http://energobyt.ru/wp-content/uploads/2014/11/фон-для-сайта.jpg');
+}
+.column3 {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-gap: 30px;
+-moz-column-gap: 30px;
+column-gap: 30px;
+-webkit-column-rule: 2px solid #ccc;
+-moz-column-rule: 2px solid #ccc;
+column-rule: 2px solid #ccc;
+}
+.column2 {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 2;
+-webkit-column-gap: 30px;
+-moz-column-gap: 30px;
+column-gap: 30px;
+-webkit-column-rule: 2px solid #ccc;
+-moz-column-rule: 2px solid #ccc;
+column-rule: 2px solid #ccc;
+}
+.tableText {
+width: 100%; /* Ширина таблицы */
+}
+td {
+padding: 5px; /* Поля в ячейках */
+vertical-align: top; /* Выравнивание по верхнему краю ячеек */
+}
+.redtext {
+color: #BE2727;
+}
+hr.style {
+overflow: visible; /* For IE */
+height: 30px;
+border-style: solid;
+border-color: black;
+border-width: 2px 0 0 0;
+border-radius: 30px;
+}
+hr.style:before { /* Not really supposed to work, but does */
+display: block;
+content: "";
+height: 30px;
+margin-top: -35px;
+border-style: solid;
+border-color: black;
+border-width: 0 0 2px 0;
+border-radius: 30px;
+}
+hr.packmanline{
+width:100%;
+align=center;
+border: 0;
+height: 35px;
+background-image: url("https://image.ibb.co/jbXody/IMG_9567.png");
+}
+	</style>
+	<STYLE>.highlight-default .hll { background-color: #ffffcc }
+.highlight-default  { background: #f8f8f8; }
+.highlight-default .c { color: #408080; font-style: italic } /* Comment */
+.highlight-default .err { border: 1px solid #FF0000 } /* Error */
+.highlight-default .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight-default .o { color: #666666 } /* Operator */
+.highlight-default .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight-default .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight-default .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight-default .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight-default .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight-default .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight-default .gd { color: #A00000 } /* Generic.Deleted */
+.highlight-default .ge { font-style: italic } /* Generic.Emph */
+.highlight-default .gr { color: #FF0000 } /* Generic.Error */
+.highlight-default .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight-default .gi { color: #00A000 } /* Generic.Inserted */
+.highlight-default .go { color: #888888 } /* Generic.Output */
+.highlight-default .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight-default .gs { font-weight: bold } /* Generic.Strong */
+.highlight-default .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight-default .gt { color: #0044DD } /* Generic.Traceback */
+.highlight-default .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight-default .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight-default .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight-default .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight-default .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight-default .kt { color: #B00040 } /* Keyword.Type */
+.highlight-default .m { color: #666666 } /* Literal.Number */
+.highlight-default .s { color: #BA2121 } /* Literal.String */
+.highlight-default .na { color: #7D9029 } /* Name.Attribute */
+.highlight-default .nb { color: #008000 } /* Name.Builtin */
+.highlight-default .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight-default .no { color: #880000 } /* Name.Constant */
+.highlight-default .nd { color: #AA22FF } /* Name.Decorator */
+.highlight-default .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight-default .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight-default .nf { color: #0000FF } /* Name.Function */
+.highlight-default .nl { color: #A0A000 } /* Name.Label */
+.highlight-default .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight-default .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight-default .nv { color: #19177C } /* Name.Variable */
+.highlight-default .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight-default .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight-default .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight-default .mf { color: #666666 } /* Literal.Number.Float */
+.highlight-default .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight-default .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight-default .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight-default .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight-default .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight-default .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight-default .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight-default .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight-default .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight-default .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight-default .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight-default .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight-default .sx { color: #008000 } /* Literal.String.Other */
+.highlight-default .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight-default .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight-default .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight-default .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight-default .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight-default .vc { color: #19177C } /* Name.Variable.Class */
+.highlight-default .vg { color: #19177C } /* Name.Variable.Global */
+.highlight-default .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight-default .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight-default .il { color: #666666 } /* Literal.Number.Integer.Long */
+.highlight-default pre {padding: 0px; border: none; color: inherit; background-color: inherit; margin:0px; }
+.highlight-default table {padding: 0px; border: none;}
+.highlight-defaulttable td {border-width:0; vertical-align: baseline; }
+.highlight-defaulttable tr {vertical-align: baseline; }
+.highlight-defaulttable tbody {vertical-align: baseline; }
+.highlight-defaulttable td.code {width:100%; }
+.source-block pre {padding: 0px; border: none; color: inherit; background-color: inherit; }
+.linenodiv pre {padding: 0px; border: none; color: inherit; background-color: inherit; }
+div.source-block {border-style: solid; border-color: gray; border-width: 1px; }</STYLE><STYLE>div.highlight-default{padding: 1em; }</STYLE><!-- Begin Thumblist styles -->
+<style>
+    table.thumblist-table {
+        border: 1px solid #DDD;
+        }
+
+    div.thumblist-table-item{
+		padding: 1em;
+	}
+
+	td.thumblist-td {
+        border: 1px solid #DDD;
+		text-align: center;
+	}
+
+    div.thumblist-table-image{
+		text-align: center;
+	}
+
+	div.thumblist-table-comment{
+		text-align: center;
+		height: 100%;
+	}
+</style>
+<!-- End Thumblist styles -->
+</head>
+
+<body>
+<ul>
+<li>Cуществует коллектор <b>partitioningBy</b>, который принимает поток и разбивает его содержимое на две группы . Чтобы определить, куда какой элемент поместить, этот коллектор пользуется предикатом  Predicate, а возвращает отображение Map, сопоставляющее булеву значению список List. Таким образом, в списке, соответствующем значению true, будут находиться элементы потока, для которых предикат вернул true, в списке, соответствующем значению false, – все остальные. С помощью этого механизма мы можем отделить группы (исполнители с несколькими участниками) от солистов. В данном случае функция разбиения сообщает, является ли исполнитель солистом. Ее реализация показана в примере</li>
+</ul>
+<div class="source-block">
+<table class="highlight-defaulttable">
+<tr>
+<td class="linenos"><div class="linenodiv">
+<pre>1
+2
+3
+4
+5
+6</pre>
+</div></td>
+<td class="code"><div class="highlight-default">
+<pre><span></span><span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list2</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="o">-</span><span class="mi">20</span><span class="o">,</span> <span class="mi">30</span><span class="o">,</span> <span class="o">-</span><span class="mi">4</span><span class="o">,</span> <span class="o">-</span><span class="mi">9</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">22</span><span class="o">);</span>
+<span class="n">isDigitPositive</span><span class="o">(</span><span class="n">list2</span><span class="o">);</span>
+
+<span class="kd">public</span> <span class="kd">static</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">Boolean</span><span class="o">,</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;&gt;</span> <span class="nf">isDigitPositive</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">){</span>
+   <span class="k">return</span> <span class="n">list</span><span class="o">.</span><span class="na">stream</span><span class="o">().</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">partitioningBy</span><span class="o">(</span><span class="n">digit</span> <span class="o">-&gt;</span> <span class="n">digit</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">));</span>
+<span class="o">}</span>
+</pre>
+</div></td>
+</tr>
+</table></div><br/>
+<br/>
+<table class="thumblist-table">
+<tr class="thumblist-row">
+<td class="thumblist-td"><div class="thumblist-table-item"><div class="thumblist-table-image"><A HREF="__attach/part1.jpg"><IMG SRC="__attach/__thumb/th_maxsize_650_part1.jpg"/></A></div><div class="thumblist-table-comment"></div></div></td>
+<td class="thumblist-td"><div class="thumblist-table-item"><div class="thumblist-table-image"><A HREF="__attach/part2.jpg"><IMG SRC="__attach/__thumb/th_maxsize_650_part2.jpg"/></A></div><div class="thumblist-table-comment"></div></div></td>
+</tr>
+</table><br/>
+</body>
+</html>
