@@ -1,0 +1,71 @@
+@XmlElement
+(:spoiler expandtext='@XmlElement':)
+
+Maps a JavaBeans property or field to an XML element derived from a property or field name. 
+Default settings:
+
+<pre>
+@XmlElement (
+    name = "##default", 
+    nillable = false, 
+    namespace = "##default", 
+    type = DEFAULT.class, 
+    defaultValue = "\u0000"
+)
+</pre>
+(:spoilerend:)
+@XmlAttribute
+ (:spoiler expandtext='@XmlAttribute':)
+Поле, помеченное этим тегом будет являться атрибутом и рутового элемента
+
+Maps a JavaBeans property to an XML attribute. 
+
+Default settings:
+
+<pre>
+@XmlAttribute (
+    name = ##default, 
+    required = false, 
+    namespace = "##default" 
+)
+</pre>
+(:spoilerend:)
+@XmlElementWrapper
+(:spoiler expandtext='@XmlElementWrapper':)
+
+(:thumbgallery cols=1 px=450:)
+
+<pre>
+Generates a wrapper element around an XML representation. It is typically used as a wrapper XML element around collections. 
+
+Default settings:
+
+@XmlElementWrapper (
+    name = "##default", 
+    namespace = "##default", 
+    nillable = false
+)
+</pre>
+
+
+(:spoilerend:) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+(:spoiler expandtext='@XmlSchema':)
+
+
+
+(:spoilerend:) 
+
+<hr class='style'/>

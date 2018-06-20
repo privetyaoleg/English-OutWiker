@@ -1,0 +1,27 @@
+(:spoiler expandtext='@XmlSchema':)
+
+Maps a package to an XML target namespace.
+Default settings:
+
+@XmlSchema ( 
+<pre>	xmlns = {}, 
+	namespace = "", 
+	elementFormDefault = XmlNsForm.UNSET, 
+	attributeFormDefault = XmlNsForm.UNSET</pre>)
+
+(:spoilerend:) (:spoiler expandtext='@XmlAccessorType':)
+Controls default serialization of fields and properties.
+XmlAccessType.NONE - сохраняются только элементы, отмеченные аннотацией @XmlElement
+XmlAccessType.FIELD - сохраняет все нестатические и не transiet поля (если у нас все не transient, но мы хотим какое-то поля исключить, используем @XmlTransient
+XmlAccessType.PROPERTY - сохраняются все геттеры/сеттер пары и поля, отмеченные аннотацией
+XmlAccessType.PUBLIC - сохраняются все публичные геттеры/сеттер пары, поля , а так же те, что отмечены аннотацией
+(:spoilerend:)(:spoiler expandtext='@XmlRootElement':)
+
+(:spoilerend:) (:spoiler expandtext='@XmlSchema':)
+
+
+
+(:spoilerend:) 
+
+<hr class='style'/>
+

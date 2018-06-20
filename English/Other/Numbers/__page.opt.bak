@@ -1,17 +1,17 @@
 [General]
-type = wiki
-tags = 
-order = 0
-creationdatetime = 2018-05-02 23:15:26.258000
-datetime = 2018-05-02 23:24:41.784000
-cursorposition = 1614
+<<<<<<< HEAD
+datetime = 2018-05-03 13:34:31.361962
+cursorposition = 941
 
 [wiki]
-<<<<<<< HEAD
-md5_hash = 270b83e88d700d23eb69dc087f00f08a
+md5_hash = d6c8aaf4bb9cae79a47d499c7273167d
 =======
-md5_hash = dfa98e25bb74770a88dfb63c3fcccfc1
->>>>>>> 0edc408e0522b712be8a10e8e58f8a237717ee6e
+datetime = 2018-05-02 23:24:41.784406
+cursorposition = 0
+
+[wiki]
+md5_hash = 730fbd53ca25d741699b88385e994a03
+>>>>>>> c9dc7105f5e86238f0811b3cdb71c212127b1670
 
 [Misc]
 pageindex = 1

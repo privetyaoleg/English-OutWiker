@@ -1,22 +1,4 @@
 [General]
-<<<<<<< HEAD
-type = wiki
-tags = 
-order = 3
-creationdatetime = 2018-04-25 17:43:49.613000
-datetime = 2018-05-14 16:45:23.914000
-cursorposition = 1131
-
-[wiki]
-md5_hash = 92230889ad6bb068b354ad3f53e912f6
-=======
-datetime = 2018-05-10 19:25:27.913000
-cursorposition = 1080
->>>>>>> c9dc7105f5e86238f0811b3cdb71c212127b1670
-
-[Misc]
-pageindex = 1
-
-[wiki]
-md5_hash = 03ba3bcb942ed6e9d0efe1aebfbcb045
+datetime = 2018-05-30 20:06:17.228000
+cursorposition = 1128
 

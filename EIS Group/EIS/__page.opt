@@ -1,6 +1,21 @@
-<<<<<<< HEAD
-=======
+[General]
+type = wiki
+tags = проверка
+order = 0
+creationdatetime = 2018-03-20 20:01:23.232000
+datetime = 2018-03-20 20:01:23.270000
+cursorposition = 0
+selectedtab = 0
+
+[wiki]
+md5_hash = a9c99d1a737bbf7e7358bf9bd6b6c3a7
+
+[Misc]
+pageindex = 1
+
 [Tree]
 expand = True
 
->>>>>>> c9dc7105f5e86238f0811b3cdb71c212127b1670
+[Tabs]
+tab_0 = Policy/Personal Lines/Actions Policy
+

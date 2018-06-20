@@ -1,0 +1,25 @@
+* '''ALT + left/right''' - навигация по табам
+
+
+* '''ALT + 1''' - Project open/close
+
+
+* '''CTRL + W''' - Выделить слово/метод...
+
+
+* '''CTRL + P''' - список параметров в методе
+
+
+* '''CTRL + J''' - template (live templates - setting)
+
+
+* '''CTRL + SHIFT + ENTER''' - ;
+
+
+* '''CTRL + F12''' - all methods
+
+
+* '''ALT + 7''' - all methods structure
+
+
+* '''CTRL + SHIFT + F12''' - close all except code

@@ -1,23 +1,17 @@
-<<<<<<< HEAD
 [General]
 type = wiki
 tags = 
 order = 2
 creationdatetime = 2018-03-28 23:54:21.665000
-datetime = 2018-05-08 20:48:08.794000
-cursorposition = 882
-=======
+datetime = 2018-05-10 23:07:30.053000
+cursorposition = 1423
+
 [Tree]
 expand = True
->>>>>>> c9dc7105f5e86238f0811b3cdb71c212127b1670
-
-[General]
-datetime = 2018-05-10 23:07:30.053000
-cursorposition = 1492
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 9b7db479e234e41276c20e545841df17
+md5_hash = 2b4ee1d15d9be422c7a0eff5efaef34e
 
